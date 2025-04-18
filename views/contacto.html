@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Dream Mountain Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/botones.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/redes.css">
+    <link rel="stylesheet" href="./assets/css/ubicacion.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="shortcut icon" href="./assets/img/DreamMountain.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo-removebg-preview.png" alt="Dream Mountain Hotel">
+        
+        <nav class="navbar">
+            <a class="button" href="./index.html">INICIO</a>
+            <a class="button" href="./servicios.html">SERVICIOS</a>
+            <a class="button" href="./habitaciones.html">HABITACIONES</a>
+            <a class="button" href="./contacto.html">CONTACTO</a>
+            <a class="button" href="./reserva.html">RESERVAR</a>
+            <a type="button" href="#" class="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </a>
+        </nav>
+        </div>
+    </header>
+<!-- Seccion de contacto -->
+<div class="container">
+    <h2>Contáctanos</h2>
+    <form id="contactForm" class="form">
+        <label for="name" class="label">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError">Este campo es obligatorio.</span>
+
+        <label for="email" class="label">Correo Electrónico:</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError">Ingrese un correo válido.</span>
+
+        <label for="phone" class="label">Teléfono:</label>
+        <input type="tel" id="phone" name="phone">
+        <span class="error" id="phoneError">Este campo es obligatorio.</span>
+
+        <label for="message" class="label">Mensaje:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <span class="error" id="messageError">Este campo es obligatorio.</span>
+
+        <button type="submit" class="submit">Enviar Mensaje</button>
+    </form>
+
+    <div class="contact-info">
+        <h3>¡Queremos escucharte!</h3>
+        <p>Si tienes preguntas o necesitas más información, no dudes en contactarnos.</p>
+        <p>📞+506 2500-7611</p>
+        <div class="social-icons">
+            <ul class="social">
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.988 14.5c-.278-.139-1.644-.812-1.898-.906-.254-.093-.44-.139-.626.14-.186.278-.719.906-.88 1.093-.162.186-.324.209-.602.07-.278-.14-1.174-.433-2.234-1.38-.826-.735-1.384-1.64-1.548-1.918-.162-.278-.017-.428.122-.567.126-.126.278-.324.418-.487.14-.162.186-.278.278-.464.093-.186.047-.348-.023-.487-.07-.14-.626-1.511-.858-2.07-.226-.544-.456-.47-.626-.478-.162-.007-.348-.009-.534-.009-.186 0-.487.07-.74.348-.254.278-.973.95-.973 2.32 0 1.37.995 2.695 1.134 2.882.14.186 1.957 2.99 4.74 4.09.662.286 1.178.457 1.58.585.664.211 1.27.181 1.75.11.533-.079 1.644-.67 1.875-1.316.232-.647.232-1.202.162-1.316-.07-.116-.254-.186-.532-.325zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Seccion de Ubicacion -->
+<section class="ubicacion">
+    <div class="container text-center">
+        <h2 class="mb-4">Nuestra Ubicación</h2>
+        <p style="text-align: justify;">Nos encontramos en el corazón de Monteverde, rodeados de la naturaleza más pura de Costa Rica.</p>
+        <br>
+        <p style="text-align: justify;">Para llegar al Dream Mountain Hotel en Monteverde, toma la Ruta 606 desde Guacimal y sigue el camino escénico de montaña. A medida que asciendes, disfruta de las impresionantes vistas del bosque nuboso. Al llegar a Santa Elena, continúa hacia la Reserva de Monteverde y sigue las señales hacia el hotel. Nos encontrarás en un rincón tranquilo, rodeado de naturaleza, a solo 10 minutos del centro del pueblo.</p>
+        <div class="mapa-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62977.70255351466!2d-84.82949591387846!3d10.303441223079337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa116e8e2180c6d%3A0x2e268fbc2e11a4e2!2sMonteverde%2C%20Puntarenas!5e0!3m2!1ses-419!2scr!4v1711360738202"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Dream Mountain Hotel</h3>
+            <p>Tu refugio ideal en la montaña. Disfruta del lujo y la naturaleza en un solo lugar.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./habitaciones.html">Habitaciones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./reserva.html">Reservar</a></li>
+                <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: info@dreammountain.com</p>
+            <p>Teléfono: +506 1234-5678</p>
+            <p>Dirección: Calle Montaña 123, Costa Rica</p>
+            <p>Instagram: <a href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-logo"></a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Dream Mountain Hotel | Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
+                <div id="loginMessage" class="mt-3 text-center"></div>
+            </div>
+            <!-- Pie del modal -->
+            <div class="modal-footer">
+                <p class="text-center w-100">¿No tienes una cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/contacto.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

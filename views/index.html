@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Mountain Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/botones.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/carrusel.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    
+    <link rel="shortcut icon" href="./assets/img/DreamMountain.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo3.png" alt="Dream Mountain Hotel">
+        
+        <nav class="navbar">
+            <a class="button" href="./index.html">INICIO</a>
+            <a class="button" href="./servicios.html">SERVICIOS</a>
+            <a class="button" href="./habitaciones.html">HABITACIONES</a>
+            <a class="button" href="./contacto.html">CONTACTO</a>
+            <a class="button" href="./reserva.html">RESERVAR</a>
+            <a type="button" href="#" class="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </a>
+        </nav>
+        </div>
+    </header>
+    <!-- Seccion de carrusel -->
+    <div id="carouselMultiItem" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/carousel1.jpg" class="carousel-side-image" alt="Imagen 1">
+                    <img src="./assets/img/carousel2.jpg" class="carousel-center-image" alt="Imagen 2">
+                    <img src="./assets/img/carousel3.jpg" class="carousel-side-image" alt="Imagen 3">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/carousel4.jpg" class="carousel-side-image" alt="Imagen 4">
+                    <img src="./assets/img/carousel5.jpg" class="carousel-center-image" alt="Imagen 5">
+                    <img src="./assets/img/carousel6.jpg" class="carousel-side-image" alt="Imagen 6">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/carousel7.jpg" class="carousel-side-image" alt="Imagen 7">
+                    <img src="./assets/img/carousel8.jpg" class="carousel-center-image" alt="Imagen 8">
+                    <img src="./assets/img/carousel9.jpg" class="carousel-side-image" alt="Imagen 9">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMultiItem" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMultiItem" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <!-- Bienvenida e imagen -->
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h1 style="font-size: 60px;">Bienvenidos a Dream Mountain Hotel</h1>
+                <h3 style="font-size: 30px;" class="subtitulo">Tu refugio ideal en la montaña.</h3>
+                <p class="lead text-white mb-4" style="font-size: 19px; text-align: justify;">
+                    Descubre el lugar perfecto para desconectarte y renovar tus sentidos. 
+                    Aquí combinamos el lujo y la tranquilidad de la naturaleza para ofrecerte 
+                    una experiencia inolvidable. Relájate en nuestras exclusivas habitaciones 
+                    rodeadas de imponentes paisajes, disfruta de servicios diseñados para tu comodidad 
+                    y déjate envolver por la magia de la montaña.
+                </p>
+            </div>
+            <div class="image">
+                <img src="./assets/img/Hotel.jpg" alt="Hotel en la montaña">
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Servicios usando bootstrap y awesomefont -->
+<section class="py-5 border-top border-bottom border-success border-opacity-25">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold text-success mb-4 position-relative pb-3">
+                    Servicios Exclusivos
+                    <span class="position-absolute bottom-0 start-0 bg-success" style="height: 3px; width: 80px;"></span>
+                </h2>
+                <p class="lead text-white mb-4">
+                    Descubre nuestra amplia gama de servicios diseñados para tu máximo confort y relajación. 
+                    Desde tratamientos de spa con ingredientes naturales hasta experiencias gastronómicas únicas.
+                </p>
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Spa de montaña con tratamientos naturales</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Restaurante gourmet con ingredientes locales</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Actividades de aventura guiadas</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Piscina climatizada con vistas panorámicas</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Servicio de conserjería 24/7</li>
+                </ul>
+                <a href="./servicios.html" class="btn btn-success px-4 py-2 rounded-pill fw-bold">
+                    Explorar Servicios <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <img src="./assets/img/gym2.jpg" 
+                     alt="gym" 
+                     class="img-fluid rounded-3 w-100">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Habitaciones usando bootstrap y awesomefont -->
+<section class="py-5 bg-dark bg-opacity-10">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="display-5 fw-bold text-success mb-4 position-relative pb-3">
+                    Habitaciones de Ensueño
+                    <span class="position-absolute bottom-0 start-0 bg-success" style="height: 3px; width: 80px;"></span>
+                </h2>
+                <p class="lead text-white mb-4">
+                    Cada una de nuestras habitaciones ha sido diseñada pensando en tu comodidad y en ofrecerte 
+                    las mejores vistas a la naturaleza. Disfruta de espacios elegantes con toques modernos.
+                </p>
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Suites con balcones privados</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Vistas panorámicas a las montañas</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Decoración elegante y contemporánea</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Amenidades de lujo y tecnología moderna</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Servicio a la habitación 24 horas</li>
+                </ul>
+                <a href="./habitaciones.html" class="btn btn-success px-4 py-2 rounded-pill fw-bold">
+                    Ver Habitaciones <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="./assets/img/habitacionIndex.jpg" 
+                     alt="Habitacion" 
+                     class="img-fluid rounded-3 w-100">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Contacto usando bootstrap y awesomefont -->
+<section class="py-5 border-top border-bottom border-success border-opacity-25">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold text-success mb-4 position-relative pb-3">
+                    Contacto Personalizado
+                    <span class="position-absolute bottom-0 start-0 bg-success" style="height: 3px; width: 80px;"></span>
+                </h2>
+                <p class="lead text-white mb-4">
+                    Nuestro equipo está comprometido en hacer de tu estancia una experiencia inolvidable. 
+                    Contáctanos para cualquier consulta, reserva especial o requerimiento que puedas tener.
+                </p>
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Atención personalizada 24/7</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Asistencia para planificar tu estancia</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Recomendaciones de actividades locales</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Reservas para eventos especiales</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Transporte y logística</li>
+                </ul>
+                <a href="./contacto.html" class="btn btn-success px-4 py-2 rounded-pill fw-bold">
+                    Contáctanos <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <img src="./assets/img/contactoIndex.jpg" 
+                     alt="Servicio al cliente" 
+                     class="img-fluid rounded-3 w-100">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Reservas usando bootstrap y awesomefont -->
+<section class="py-5 bg-dark bg-opacity-10">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="display-5 fw-bold text-success mb-4 position-relative pb-3">
+                    Reserva Tu Experiencia
+                    <span class="position-absolute bottom-0 start-0 bg-success" style="height: 3px; width: 80px;"></span>
+                </h2>
+                <p class="lead text-white mb-4">
+                    Garantiza tu escapada perfecta a la montaña con nuestro sencillo sistema de reservas. 
+                    Ofrecemos paquetes especiales y promociones exclusivas para nuestros huéspedes.
+                </p>
+                <ul class="list-unstyled text-white mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Reservas online seguras</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Política de cancelación flexible</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Ofertas y paquetes especiales</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Confirmación inmediata</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Asistencia para reservas grupales</li>
+                </ul>
+                <a href="./reserva.html" class="btn btn-success px-4 py-2 rounded-pill fw-bold">
+                    Reservar Ahora <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="./assets/img/reservarIndex.jpg" 
+                     alt="Reserva en montaña" 
+                     class="img-fluid rounded-3 w-100">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonios usando bootstrap y awesomefont -->
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4" style="color: #36B37E;">Lo que dicen nuestros huéspedes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm bg-transparent text-white">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-quote-left me-2" style="color: #36B37E;"></i>
+                            <p class="card-text">"Una experiencia increíble. Las vistas desde la habitación son impresionantes y el servicio es excepcional."</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/maria.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                            <div>
+                                <h6 class="mb-0">María Rodríguez</h6>
+                                <small class="text-muted">Huésped frecuente</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm bg-transparent text-white">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-quote-left me-2" style="color: #36B37E;"></i>
+                            <p class="card-text">"El spa de montaña es simplemente maravilloso. Volveré sin duda para repetir esta experiencia relajante."</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/carlos.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                            <div>
+                                <h6 class="mb-0">Carlos Méndez</h6>
+                                <small class="text-muted">Primera visita</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm bg-transparent text-white">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-quote-left me-2" style="color: #36B37E;"></i>
+                            <p class="card-text">"Celebramos nuestro aniversario aquí y fue perfecto. La atención al detalle hizo toda la diferencia."</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/img/ana.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                            <div>
+                                <h6 class="mb-0">Ana y Javier</h6>
+                                <small class="text-muted">Aniversario</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dream Mountain Hotel</h3>
+                <p>Tu refugio ideal en la montaña. Disfruta del lujo y la naturaleza en un solo lugar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reserva.html">Reservar</a></li>
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@dreammountain.com</p>
+                <p>Teléfono: +506 1234-5678</p>
+                <p>Dirección: Calle Montaña 123, Costa Rica</p>
+                <p>Instagram: <a href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-logo"></a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Mountain Hotel | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    
+<!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
+                <div id="loginMessage" class="mt-3 text-center"></div>
+            </div>
+            <!-- Pie del modal -->
+            <div class="modal-footer">
+                <p class="text-center w-100">¿No tienes una cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="./assets/js/modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

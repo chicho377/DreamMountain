@@ -1,0 +1,9 @@
+/*Estilos del modal del login*/
+.modal-backdrop {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal-backdrop.fade.show {
+    opacity: 1 !important;
+}

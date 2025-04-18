@@ -1,0 +1,143 @@
+/*Estilos del header*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 115px;
+    margin-right: 40px;
+}
+
+/* Barra de navegacion */
+.navbar {
+    font-family: Josefin Sans, sans-serif;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    background-color: #00634D;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #0D3B26;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    background-color: #D5E8D4;
+}
+
+/* Estilos para pantallas pequeñas tablets y celulares */
+@media (max-width: 1024px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column; /* Disposicion vertical */
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        width: 100%; 
+        text-align: center;
+        padding: 12px 0;
+        min-width: 350px; /* Aumenta el ancho minimo en vertical */
+    }
+}
+
+/* Estilos para celulares más pequeños */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .logo img {
+        width: 90px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Estilos para pantallas en orientacion horizontal */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: row; /* Disposición horizontal */
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 15px;
+        flex: 1; 
+        min-width: 80px;
+        text-align: center; 
+    }
+}
+
+/* Estilos para pantallas en orientación horizontal dispositivos más pequeños */
+@media (max-width: 768px) and (orientation: landscape) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding: 15px;
+        gap: 5px; 
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 10px;
+        flex: 1;
+        min-width: 60px;
+        max-width: 120px; 
+        text-align: center; 
+    }
+}

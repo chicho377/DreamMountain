@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Mountain Hotel - Habitaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/botones.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/habitaciones.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="shortcut icon" href="./assets/img/DreamMountain.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo3.png" alt="Dream Mountain Hotel">
+        
+        <nav class="navbar">
+            <a class="button" href="./index.html">INICIO</a>
+            <a class="button" href="./servicios.html">SERVICIOS</a>
+            <a class="button" href="./habitaciones.html">HABITACIONES</a>
+            <a class="button" href="./contacto.html">CONTACTO</a>
+            <a class="button" href="./reserva.html">RESERVAR</a>
+            <a type="button" href="#" class="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </a>
+        </nav>
+        </div>
+    </header>
+    
+    <!-- Seccion Habitaciones -->
+<section class="container py-5">
+    <h1 class="text-center mb-5">Nuestras Habitaciones</h1>
+    
+    <div class="row g-4">
+        <!-- Habitacion 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="./assets/img/carousel1.jpg" class="card-img-top" alt="Habitación Estándar">
+                <div class="card-body">
+                    <h3 class="card-title">Habitación Estándar</h3>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark"><i class="fas fa-user me-1"></i> 2 Personas</span>
+                        <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i> 25m²</span>
+                    </div>
+                    <h4 class="text-primary mb-3">$120 <small class="text-muted">/noche</small></h4>
+                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#habitacion1Modal">
+                        <i class="fas fa-eye me-2"></i>Ver detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Habitacion 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="./assets/img/habitacionDeLujo.jpg" class="card-img-top" alt="Suite Familiar">
+                <div class="card-body">
+                    <h3 class="card-title">Suite Familiar</h3>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark"><i class="fas fa-users me-1"></i> 4 Personas</span>
+                        <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i> 45m²</span>
+                    </div>
+                    <h4 class="text-primary mb-3">$220 <small class="text-muted">/noche</small></h4>
+                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#habitacion2Modal">
+                        <i class="fas fa-eye me-2"></i>Ver detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Habitacion 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="./assets/img/pre.jpg" class="card-img-top" alt="Suite Presidencial">
+                <div class="card-body">
+                    <h3 class="card-title">Suite Presidencial</h3>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark"><i class="fas fa-user-friends me-1"></i> 2 Personas</span>
+                        <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i> 60m²</span>
+                    </div>
+                    <h4 class="text-primary mb-3">$350 <small class="text-muted">/noche</small></h4>
+                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#habitacion3Modal">
+                        <i class="fas fa-eye me-2"></i>Ver detalles
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modales con precios y promociones -->
+<!-- Modal Habitacion 1 -->
+<div class="modal fade" id="habitacion1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Habitación Estándar <span class="badge bg-success ms-2">Más Popular</span></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/img/estan.jpg" class="img-fluid rounded mb-3" alt="Habitación Estándar">
+                        <div class="alert alert-info">
+                            <h5 class="alert-heading"><i class="fas fa-tag me-2"></i>Oferta Especial</h5>
+                            <p class="mb-0">Estadía mínima 3 noches y obtén 15% de descuento</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-primary mb-3">$120 <small class="text-muted">/noche</small></h4>
+                        <h5><i class="fas fa-star text-warning me-2"></i>Incluye:</h5>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> WiFi gratuito</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> TV 47" HD</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Aire acondicionado</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Desayuno buffet incluido</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg" onclick="window.location.href='./reserva.html?tipo=estandar'"><i class="fas fa-calendar-check me-2"></i>Reservar Ahora</button>
+                            <button class="btn btn-outline-secondary" id="verificarDisponibilidad2"><i class="fas fa-question-circle me-2"></i>Consultar Disponibilidad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Habitacion 2 -->
+<div class="modal fade" id="habitacion2Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Suite Familiar <span class="badge bg-warning ms-2">Ideal para familias</span></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/img/carousel3.jpg" class="img-fluid rounded mb-3" alt="Suite Familiar">
+                        <div class="alert alert-success">
+                            <h5 class="alert-heading"><i class="fas fa-gift me-2"></i>Promoción</h5>
+                            <p class="mb-0">¡Niños menores de 12 años se hospedan gratis!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-primary mb-3">$220 <small class="text-muted">/noche</small></h4>
+                        <h5><i class="fas fa-star text-warning me-2"></i>Incluye:</h5>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> 2 Camas dobles</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Área de juegos infantil</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Cocina básica</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Desayuno familiar incluido</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg" onclick="window.location.href='./reserva.html?tipo=familiar'"><i class="fas fa-calendar-check me-2"></i>Reservar Ahora</button>
+                            <button class="btn btn-outline-secondary" id="verificarDisponibilidad3"><i class="fas fa-question-circle me-2"></i>Consultar Disponibilidad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Habitacion 3 -->
+<div class="modal fade" id="habitacion3Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Suite Presidencial <span class="badge bg-danger ms-2">Exclusiva</span></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/img/carousel9.jpg" class="img-fluid rounded mb-3" alt="Suite Presidencial">
+                        <div class="alert alert-dark">
+                            <h5 class="alert-heading"><i class="fas fa-crown me-2"></i>Beneficios VIP</h5>
+                            <p class="mb-0">Check-in prioritario y botella de champagne de bienvenida</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-primary mb-3">$350 <small class="text-muted">/noche</small></h4>
+                        <h5><i class="fas fa-star text-warning me-2"></i>Incluye:</h5>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Dormitorio master</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Sala de estar privada</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Minibar premium</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Desayuno a la carta incluido</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg" onclick="window.location.href='./reserva.html?tipo=presidencial'"><i class="fas fa-calendar-check me-2"></i>Reservar Ahora</button>
+                            <button class="btn btn-outline-secondary" id="verificarDisponibilidad"><i class="fas fa-question-circle me-2"></i>Consultar Disponibilidad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dream Mountain Hotel</h3>
+                <p>Tu refugio ideal en la montaña. Disfruta del lujo y la naturaleza en un solo lugar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reserva.html">Reservar</a></li>
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@dreammountain.com</p>
+                <p>Teléfono: +506 1234-5678</p>
+                <p>Dirección: Calle Montaña 123, Costa Rica</p>
+                <p>Instagram: <a href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-logo"></a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Mountain Hotel | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="text-align:left;">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
+                <div id="loginMessage" class="mt-3 text-center"></div>
+            </div>
+            <!-- Pie del modal -->
+            <div class="modal-footer">
+                <p class="text-center w-100">¿No tienes una cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="./assets/js/modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/habitacion.js"></script>
+</html>

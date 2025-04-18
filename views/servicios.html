@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Dream Mountain Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/botones.css">
+    <link rel="stylesheet" href="./assets/css/servicios.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="shortcut icon" href="./assets/img/DreamMountain.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header-->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo-removebg-preview.png" alt="Dream Mountain Hotel">
+        
+        <nav class="navbar">
+            <a class="button" href="./index.html">INICIO</a>
+            <a class="button" href="./servicios.html">SERVICIOS</a>
+            <a class="button" href="./habitaciones.html">HABITACIONES</a>
+            <a class="button" href="./contacto.html">CONTACTO</a>
+            <a class="button" href="./reserva.html">RESERVAR</a>
+            <a type="button" href="#" class="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </a>
+        </nav>
+        </div>
+    </header>
+
+<section id="servicios" class="container py-5">
+    <h2 class="text-center mb-4 fw-bold">Nuestros Servicios</h2>
+    
+    <div class="row g-4">
+        <!-- Servicio 1: Habitaciones -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/habitacionDeLujo.jpg" class="card-img-top" alt="Habitaciones de lujo">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Habitaciones de Lujo</h5>
+                    <p class="card-text">Disfruta de nuestras habitaciones con vistas increíbles y todas las comodidades.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2: Restaurante -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="Restaurante gourmet">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Restaurante Gourmet</h5>
+                    <p class="card-text">Experimenta una gastronomía excepcional con ingredientes frescos y sabores únicos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3: Spa y Spa -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/spa.jpg" class="card-img-top" alt="Spa y bienestar">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Spa y Bienestar</h5>
+                    <p class="card-text">Relájate en nuestro spa con tratamientos rejuvenecedores y terapias de lujo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 4: Tours -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/tours.jpg" class="card-img-top" alt="Tours de aventura">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Tours de Aventura</h5>
+                    <p class="card-text">Explora la belleza natural con excursiones guiadas y actividades emocionantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 5: Gimnasio -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/gym.jpg" class="card-img-top" alt="Gimnasio equipado">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Gimnasio Equipado</h5>
+                    <p class="card-text">Mantén tu rutina de ejercicios con equipos de última generación y entrenadores personales.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 6: Comodidades -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <img src="./assets/img/wifi.jpg" class="card-img-top" alt="Comodidades exclusivas">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Comodidades Exclusivas</h5>
+                    <p class="card-text">Wifi de alta velocidad, llaves digitales y más para una estancia placentera.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boton de Accesibilidad -->
+    <div class="text-center mt-5">
+        <button class="btn btn-dark" id="accesibilidadBtn">Características accesibles para personas con discapacidades</button>
+    </div>
+</section>
+
+<!-- Modal de Accesibilidad -->
+<div id="accesibilidadModal" class="modal-overlay">
+    <div class="modal-content" style="
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        text-align: center;">
+
+        <span class="close-modal">&times;</span>
+        <h3>Accesibilidad en Dream Mountain Hotel</h3>
+        <p>Nuestro hotel está diseñado para brindar comodidad a todos nuestros huéspedes. Ofrecemos:</p>
+        <ul>
+            <li>Rampas de acceso y ascensores en todas las áreas.</li>
+            <li>Habitaciones adaptadas con baños accesibles.</li>
+            <li>Menús en braille y opciones para dietas especiales.</li>
+            <li>Asistencia personalizada para necesidades específicas.</li>
+        </ul>
+    </div>
+</div>
+<!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dream Mountain Hotel</h3>
+                <p>Tu refugio ideal en la montaña. Disfruta del lujo y la naturaleza en un solo lugar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reserva.html">Reservar</a></li>
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@dreammountain.com</p>
+                <p>Teléfono: +506 1234-5678</p>
+                <p>Dirección: Calle Montaña 123, Costa Rica</p>
+                <p>Instagram: <a href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-logo"></a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Mountain Hotel | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    
+<!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="text-align:left;">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
+                <div id="loginMessage" class="mt-3 text-center"></div>
+            </div>
+            <!-- Pie del modal -->
+            <div class="modal-footer">
+                <p class="text-center w-100">¿No tienes una cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/servicios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

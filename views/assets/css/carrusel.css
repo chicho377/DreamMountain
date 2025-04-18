@@ -1,0 +1,61 @@
+/*Estilos del carrusel de la pagina de inicio*/
+#carouselMultiItem {
+    max-width: 1100px; 
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.carousel-center-image {
+    width: 40%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-side-image {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el carrusel */
+.carousel-item-next .carousel-side-image,
+.carousel-item-prev .carousel-side-image {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.carousel-item-next .carousel-center-image,
+.carousel-item-prev .carousel-center-image {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .carousel-center-image {
+        width: 60%;
+        height: 300px;
+    }
+
+    .carousel-side-image {
+        width: 20%;
+        height: 250px;
+    }
+}

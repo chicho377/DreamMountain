@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Mountain Hotel - Habitaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./assets/css/botones.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/reservas.css">
+    <link rel="shortcut icon" href="./assets/img/DreamMountain.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo3.png" alt="Dream Mountain Hotel">
+        
+        <nav class="navbar">
+            <a class="button" href="./index.html">INICIO</a>
+            <a class="button" href="./servicios.html">SERVICIOS</a>
+            <a class="button" href="./habitaciones.html">HABITACIONES</a>
+            <a class="button" href="./contacto.html">CONTACTO</a>
+            <a class="button" href="./reserva.html">RESERVAR</a>
+            <a type="button" href="#" class="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </a>
+        </nav>
+        </div>
+    </header>
+    
+    <!-- Contenido Central -->
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-5 fw-bold mb-4">Reserva tu Estancia</h1>
+                
+                <!-- Instrucciones para el calendario -->
+                <div class="calendar-instructions">
+                    <p class="mb-0"><i class="fas fa-info-circle me-2 text-primary"></i> Puedes proceder a seleccionar el rango de fechas en el siguiente calendario, desde la fecha de inicio hasta la fecha de finalización de tu estancia.</p>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div id="calendar" class="mb-4"></div>
+                    </div>
+                </div>
+                <!-- Seccion de formulario -->
+                <form id="reservaForm">
+                    <div class="form-section">
+                        <h3 class="h5 mb-4"><i class="fas fa-calendar-days me-2"></i> Fechas de Estancia</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="checkin" class="form-label required-field">Fecha de Check-in</label>
+                                <input type="text" class="form-control" id="checkin" readonly required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="checkout" class="form-label required-field">Fecha de Check-out</label>
+                                <input type="text" class="form-control" id="checkout" readonly required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="h5 mb-4"><i class="fas fa-bed me-2"></i> Detalles de la Habitación</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="habitacion" class="form-label required-field">Tipo de Habitación</label>
+                                <select class="form-select" id="habitacion" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="estandar">Habitación Estándar ($120/noche)</option>
+                                    <option value="familiar">Suite Familiar ($220/noche)</option>
+                                    <option value="presidencial">Suite Presidencial ($350/noche)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="huespedes" class="form-label required-field">Huéspedes</label>
+                                <select class="form-select" id="huespedes" required>
+                                    <option value="1">1 Adulto</option>
+                                    <option value="2" selected>2 Adultos</option>
+                                    <option value="3">3 Adultos</option>
+                                    <option value="4">4 Adultos</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="h5 mb-4"><i class="fas fa-user me-2"></i> Información Personal</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label required-field">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cedula" class="form-label required-field">Cédula/Pasaporte</label>
+                                <input type="text" class="form-control" id="cedula" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label required-field">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefono" class="form-label required-field">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="notas" class="form-label">Notas Especiales</label>
+                                <textarea class="form-control" id="notas" rows="3" placeholder="Alergias, requerimientos especiales, etc."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="h5 mb-4"><i class="fas fa-credit-card me-2"></i> Método de Pago</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="metodoPago" class="form-label required-field">Método de Pago</label>
+                                <select class="form-select" id="metodoPago" required>
+                                    <option value="" selected disabled>Seleccione...</option>
+                                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                                    <option value="transferencia">Transferencia Bancaria</option>
+                                    <option value="efectivo">Efectivo al llegar</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6" id="tarjetaFields" style="display: none;">
+                                <label for="numeroTarjeta" class="form-label">Número de Tarjeta</label>
+                                <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456">
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="MM/AA">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="CVV">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="terminos" required>
+                            <label class="form-check-label" for="terminos">
+                                Acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a> y políticas de cancelación
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mt-4">
+                        <button type="button" class="btn btn-primary btn-lg py-3" id="verificarDisponibilidad">
+                            <i class="fas fa-calendar-check me-2"></i> Verificar Disponibilidad
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- Seccion de resumen -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm sticky-top" style="top: 20px;">
+                    <div class="card-body">
+                        <h3 class="h5 mb-4"><i class="fas fa-receipt me-2"></i> Resumen de Reserva</h3>
+                        <div id="resumenReserva" class="text-center py-4">
+                            <i class="fas fa-calendar-alt fa-3x text-muted mb-3"></i>
+                            <p class="text-muted">Seleccione fechas para ver detalles</p>
+                        </div>
+                        <div class="d-grid">
+                            <button id="confirmarReserva" class="btn btn-success btn-lg" disabled>
+                                <i class="fas fa-credit-card me-2"></i> Confirmar Reserva
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dream Mountain Hotel</h3>
+                <p>Tu refugio ideal en la montaña. Disfruta del lujo y la naturaleza en un solo lugar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./reserva.html">Reservar</a></li>
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@dreammountain.com</p>
+                <p>Teléfono: +506 1234-5678</p>
+                <p>Dirección: Calle Montaña 123, Costa Rica</p>
+                <p>Instagram: <a href="https://www.instagram.com/dreammountainhotel?utm_source=qr&igsh=MXIwbHFjdWl1OWdpdQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-logo"></a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Mountain Hotel | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="text-align:left;">
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
+                <div id="loginMessage" class="mt-3 text-center"></div>
+            </div>
+            <!-- Pie del modal -->
+            <div class="modal-footer">
+                <p class="text-center w-100">¿No tienes una cuenta? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/reservas.js"></script>
+<script src="./assets/js/disponibilidad.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/es.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- js para llenar el combo de habitaciones si lo trae en la url por el boton de la pagina de habitaciones -->
+<script>
+    // obtiene el parametro de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const habitacionSeleccionada = urlParams.get('tipo');
+
+    // selecciona automaticamente el indice correspondiente si es valido
+    const habitacionSelect = document.getElementById('habitacion');
+    switch (habitacionSeleccionada) {
+        case 'estandar':
+            habitacionSelect.selectedIndex = 1;
+            break;
+        case 'familiar':
+            habitacionSelect.selectedIndex = 2;
+            break;
+        case 'presidencial':
+            habitacionSelect.selectedIndex = 3;
+            break;
+        default:
+            habitacionSelect.selectedIndex = 0;
+            break;
+    }
+</script>
+</html>

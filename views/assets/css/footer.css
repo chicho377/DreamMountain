@@ -1,0 +1,70 @@
+/*Estilos del footer*/
+footer {
+    background-color: #004d3a;
+    color: #EDEDED;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 30%;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #36B37E;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #EDEDED;
+    font-weight: bold;
+}
+
+.footer-section ul li a:hover {
+    color: #36B37E;
+}
+
+.footer-bottom {
+    background-color: #003828;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para el logo de Instagram */
+.social-logo {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.social-logo:hover {
+    opacity: 0.8;
+}

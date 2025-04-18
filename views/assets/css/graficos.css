@@ -1,0 +1,18 @@
+/*media query de los graficos en el dashboard*/
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+    }
+
+    .main-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .main-sidebar.sidebar-open {
+        transform: translateX(0);
+    }
+}
